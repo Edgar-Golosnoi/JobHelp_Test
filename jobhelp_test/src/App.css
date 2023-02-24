@@ -1,0 +1,46 @@
+.App{
+  color: rgba(39, 28, 28, 0.5);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(80px);
+}
+
+
+.card-img {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  left: 734px;
+  width: 353px;
+  height: 500px;
+  margin: 100px;
+}
+
+.body-main-text {
+  position: absolute;
+  top: 151px;
+  left: 68px;
+  display: flex;
+  flex-direction: wrap;
+  width: 515px;
+  height: 141px;
+  line-height: 44px;
+  line-height: 110%;
+  font-family: 'Inter';
+  font-style: 'Bold';
+  font-size: 40px;
+  color: #403C3C;
+}
+
+.body-text {  
+  display: flex;
+  position: absolute;
+  width: 152px;
+  height: 63px;
+  font-family: 'Inter';
+  font-style: 'Bold';
+  font-size: 40px;
+  color: #403C3C;
+  left: 68px;
+  top: 312px;
+
+}
