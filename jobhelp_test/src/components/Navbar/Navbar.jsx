@@ -2,6 +2,12 @@ import React from 'react';
 import './Navbar.css';
 
 export default function Navbar() {
+  const formDataSubmit = (e) => {
+    e.preventDefault();
+    alert("Вы вошли")
+  };
+
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <a className="navbar-brand" href="#">
@@ -34,7 +40,8 @@ export default function Navbar() {
         <a className="nav-link disabled" href="#">телефон</a>
         </li>
         <span className="nav-span-number">8 800 700 87 62</span>
-        <button className="nav-btn" width='343px' height="53px" border="10px"><span className='span'>Личный кабинет</span></button>
+        <button className="nav-btn" width='343px' height="53px" border="10px">
+        <span className='span' onClick={formDataSubmit}>Личный кабинет</span></button>
       </ul>
     </div>
   </nav>

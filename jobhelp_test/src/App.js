@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-// import Footer from './components/Footer/Footer';
+// import { Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
 // import Popupform from './components/PopupForm/Popupform';
 import Navbar from './components/Navbar/Navbar';
 // import Registration from './components/RegistrationForm/Registration';
@@ -9,6 +10,11 @@ import Body from './components/Body/Body';
 
 
 function App() {
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert('Mы вам перезвоним!')
+  }
+
   return (
     <div className='App-container'>
         <Navbar />
@@ -27,11 +33,15 @@ function App() {
           <input className='userName' placeholder='Ваше имя' type='text'></input>
           <input className='userTel' placeholder='Ваше телефон' type='text'></input>
           <input className='aboutSerch' placeholder='Какого сотрудника вы ищите' type='text'></input>
-          <button className='submitForm' type='text'>Заказать звонок</button>
+
+          <button className='submitForm' type='text'>
+          <p className='btn-text' onClick={handleSubmit}>Заказать звонок</p></button>
+          
           <h2 className='title'>Нажимая на кнопку вы даете согласие <u>на обработку персональных данных и соглашаетесь с политикой конфидециальности</u></h2>
         </div>
         <img className="card-img" src="../image1.png" alt="JobHelp"/>
         <Body />
+        <Footer />
     </div>
     
   )

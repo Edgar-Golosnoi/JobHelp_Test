@@ -1,3 +1,5 @@
+@media screen and (max-width:1280px) {
+
 .App-container {
   position: absolute;
   width: 1439px;
@@ -181,4 +183,58 @@ h2 {
   letter-spacing: -0.01em;
   color: #403C3C;
   opacity: 0.4;
+}
+
+
+.btn-text {
+  width: 134px;
+  height: 21px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 232%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+}
+
+@media screen and (max-width:768px) {
+  .App-container {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.5); 
+}
+}
+
+@media screen and (max-width:375px) {
+  .App-container {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.5); 
+}
+.body-content {
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 234px;
+  border-radius: 10px;
+}
+}
+
+@media screen and (max-width:100px) {
+  .App-container {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.5); 
+}
+.body-content {
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 234px;
+  border-radius: 10px;
+}
 }
