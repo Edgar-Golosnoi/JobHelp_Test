@@ -1,23 +1,23 @@
 import React from 'react';
 import './App.css';
-// import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
-// import Popupform from './components/PopupForm/Popupform';
 import Navbar from './components/Navbar/Navbar';
-// import Registration from './components/RegistrationForm/Registration';
 import Body from './components/Body/Body';
+import DarkTheme from './components/DarkTheme/DarkTheme';
+// import Registration from './components/RegistrationForm/Registration';
 
 
 
 function App() {
   function handleSubmit(event) {
     event.preventDefault();
-    alert('Mы вам перезвоним!')
+    alert('Спасибо, мы обязательно с вами свяжемся!')
   }
 
   return (
     <div className='App-container'>
         <Navbar />
+        <DarkTheme/>
         <div className='body-main-text'>
           <h1>Подберём резюме для ваших вакансий <br /> и обзвоним кандидатов </h1>
         </div>
@@ -36,7 +36,7 @@ function App() {
 
           <button className='submitForm' type='text'>
           <p className='btn-text' onClick={handleSubmit}>Заказать звонок</p></button>
-          
+
           <h2 className='title'>Нажимая на кнопку вы даете согласие <u>на обработку персональных данных и соглашаетесь с политикой конфидециальности</u></h2>
         </div>
         <img className="card-img" src="../image1.png" alt="JobHelp"/>

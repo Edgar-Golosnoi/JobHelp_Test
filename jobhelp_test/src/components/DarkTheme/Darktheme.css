@@ -1,0 +1,17 @@
+.App.dark { 
+  background-color: rgb(44, 40, 40);
+  position: static;
+  color: white;
+  width: 1920px;
+  height: 10000px;
+  opacity: 0.3;
+}
+
+.theme {
+  position: relative;
+  border-color: white;
+  left: 900px;
+  position: absolute;
+  left: 985px;
+  top: 29px;
+}

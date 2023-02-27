@@ -141,3 +141,11 @@
   opacity: 0.6;
 }
 
+.enter-logo {
+  position: absolute;
+  color: #FFFFFF;
+  left: 9px;
+  top: 11px;
+  width: 15px;
+  height: 15px;
+}

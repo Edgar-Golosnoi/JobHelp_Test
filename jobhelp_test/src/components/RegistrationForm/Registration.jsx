@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Registration.css';
 
 export default function Registration() {
   return (
@@ -7,11 +8,11 @@ export default function Registration() {
     <div className="form-group">
       <span>Вход/регистрация</span>
       <div className="form-check">
-      <input className="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."/>
+      <input className="form-check" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."/>
       <label htmlFor="exampleInputEmail1">Войти</label>
       </div>
       <div className="form-check">
-      <input className="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."/>
+      <input className="form-check" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."/>
       <label htmlFor="exampleInputEmail1">Зарегестрироваться</label>
       </div>
       <div className="form-group">

@@ -41,7 +41,9 @@ export default function Navbar() {
         </li>
         <span className="nav-span-number">8 800 700 87 62</span>
         <button className="nav-btn" width='343px' height="53px" border="10px">
-        <span className='span' onClick={formDataSubmit}>Личный кабинет</span></button>
+        <span className='span' onClick={formDataSubmit}>
+        <img className="enter-logo" src="../free.png" alt="JobHelp"/>
+        Личный кабинет</span></button>
       </ul>
     </div>
   </nav>
